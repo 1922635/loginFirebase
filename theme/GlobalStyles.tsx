@@ -1,11 +1,12 @@
 import { StyleSheet } from "react-native"
+import { Colores } from "./Colores"
 
 export const GlobalStyles = StyleSheet.create({
     containerCentrado: {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#0075bb'
+        backgroundColor: Colores.darkBlue
     },
 
     viewHorizontal: {
@@ -16,25 +17,25 @@ export const GlobalStyles = StyleSheet.create({
         fontSize: 46,
         margin: 20,
         fontWeight: 'bold',
-        color: '#9cffce',
+        color: Colores.lightGreen,
     },
 
     textImput: {
-        backgroundColor: '#9cffce',
+        backgroundColor: Colores.lightGreen,
         borderRadius: 12,
         margin: 10,
         width: 250,
         fontSize: 18,
-        borderColor: '#007b3e',
+        borderColor: Colores.darkGreen,
         borderWidth: 4,
     },
 
     boton: {
-        backgroundColor: '#9cffce',
+        backgroundColor: Colores.lightGreen,
         padding: 5,
         fontSize: 18,
         borderRadius: 15,
-        borderColor: "#007b3e",
+        borderColor: Colores.darkGreen,
         borderWidth: 3,
         margin: 10,
         marginHorizontal: 15,

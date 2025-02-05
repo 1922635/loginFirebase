@@ -1,15 +1,16 @@
-import { useState } from "react";
+import { useState, } from "react";
 import { Pressable, StyleProp, TextStyle } from "react-native";
 import { Link, RelativePathString } from "expo-router";
+import { Text } from "react-native";
 
 interface Props {
     label: string,
     estilo1?: StyleProp<TextStyle>,
     estilo2?: StyleProp<TextStyle>,
-    link: RelativePathString,
+    onPress (): void
 }
 
-export const Boton1 = ({label, link, estilo1, estilo2}:Props) => {
+export const Boton1 = ({label, estilo1, estilo2, onPress}:Props) => {
     const [isPressed, setIsPressed] = useState(false);
 
     const handlePress = () => {
@@ -18,11 +19,12 @@ export const Boton1 = ({label, link, estilo1, estilo2}:Props) => {
 
     return (
         <Pressable>
-            <Link
+            <Text
                 style={[estilo1, isPressed && estilo2]}
+                onPress={onPress}
                 onPressIn={handlePress}
                 onPressOut={handlePress}
-                href={link}>{label}</Link>
+                >{label}</Text>
         </Pressable>
     );
 };

@@ -11,8 +11,8 @@ export default function Index() {
         <TextInput placeholder="Usuario" style={GlobalStyles.textImput}></TextInput>
         <TextInput placeholder="Contraseña" style={GlobalStyles.textImput} secureTextEntry></TextInput>
         <View style={GlobalStyles.viewHorizontal}>
-          <Boton1 label="Login" link="./tabs" estilo1={GlobalStyles.boton}></Boton1>
-          <Boton1 label="Registrarse" link="./tabs" estilo1={GlobalStyles.boton}></Boton1>
+          <Boton1 label="Login" link="./tabs" estilo1={GlobalStyles.boton} estilo2={GlobalStyles.botonPulsado}></Boton1>
+          <Boton1 label="Registrarse" link="./tabs" estilo1={GlobalStyles.boton} estilo2={GlobalStyles.botonPulsado}></Boton1>
         </View>
     </View>
     

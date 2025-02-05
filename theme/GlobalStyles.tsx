@@ -40,5 +40,9 @@ export const GlobalStyles = StyleSheet.create({
         marginHorizontal: 15,
         width: 110,
         textAlign: 'center',
+    },
+    
+    botonPulsado: {
+        opacity: 0.4,
     }
 })

@@ -13,7 +13,7 @@ export const GlobalStyles = StyleSheet.create({
     },
 
     titulo: {
-        fontSize: 50,
+        fontSize: 46,
         margin: 20,
         fontWeight: 'bold',
         color: '#9cffce',

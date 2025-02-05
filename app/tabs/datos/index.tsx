@@ -5,7 +5,7 @@ import { GlobalStyles } from '@/theme/GlobalStyles'
 const ScreenConfiguracion = () => {
   return (
     <View style={GlobalStyles.containerCentrado}>
-      <Text style= {GlobalStyles.titulo}>Screen Configuracion</Text>
+      <Text style= {GlobalStyles.titulo}>Datos de la base de datos</Text>
     </View>
   )
 }

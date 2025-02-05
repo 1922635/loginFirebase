@@ -6,23 +6,16 @@ const TabsLayout = () => {
   return (
     <Tabs screenOptions={{ tabBarActiveTintColor: 'blue' }}>
       <Tabs.Screen
-        name="index"
+        name="signOut/index"
         options={{
-          title: 'Home',
-          tabBarIcon: ({ color, size }) => <Ionicons  size={28} name="home-outline" color={color} />,
-        }}
-      />
-      <Tabs.Screen
-        name="productos/index"
-        options={{
-          title:'productos',
+          title:'Log Out',
           tabBarIcon: ({ color }) => <Ionicons size={28} name="film-outline" color={color} />,
         }}
       />
       <Tabs.Screen
-        name="configuracion/index"
+        name="datos/index"
         options={{
-          title: 'Configuracion',
+          title: 'Datos',
           tabBarIcon: ({ color }) => <Ionicons size={28} name="construct-outline" color={color} />,
         }}
       />
